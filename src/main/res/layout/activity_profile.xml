@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ProfileActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/profile_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingBottom="80dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/HeadersText"
+                android:text="Профиль"
+                android:gravity="center"
+                android:layout_marginVertical="24dp"
+                android:textSize="24sp"
+                />
+
+            <ImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:src="@drawable/ic_avatar"
+                android:background="@drawable/image_border"
+                android:layout_marginVertical="12dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                style="@style/HeadersText"
+                android:text="ФАМИЛИЯ"
+                />
+            <EditText
+                android:id="@+id/et_fam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="48dp"
+                android:layout_marginVertical="12dp"
+                android:fontFamily="@font/inter"
+                tools:text="Пупкин23456"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/HeadersText"
+                android:layout_marginTop="12dp"
+                android:text="ИМЯ"
+                />
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="48dp"
+                android:layout_marginVertical="12dp"
+                android:fontFamily="@font/inter"
+                tools:text="Василий3456"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/HeadersText"
+                android:layout_marginTop="12dp"
+                android:text="НАСЕЛЕННЫЙ ПУНКТ"
+
+                />
+            <EditText
+                android:id="@+id/et_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="48dp"
+                android:layout_marginVertical="12dp"
+                android:fontFamily="@font/inter"
+                tools:text="Самара"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/HeadersText"
+                android:layout_marginTop="12dp"
+                android:text="EMAIL"
+
+                />
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="48dp"
+                android:layout_marginVertical="12dp"
+                tools:text="test@ya.ru"
+                android:enabled="false"
+                android:fontFamily="@font/inter"
+                android:textColor="@android:color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/HeadersText"
+                android:layout_marginTop="12dp"
+                android:text="ТЕЛЕФОН"
+                />
+
+            <br.com.sapereaude.maskedEditText.MaskedEditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="48dp"
+                android:layout_marginVertical="12dp"
+                android:inputType="phone"
+                android:typeface="monospace"
+                app:mask="+7(###)###-##-##"
+                app:allowed_chars="1234567890"
+                app:keep_hint="true"
+                tools:text="+79578526574"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/HeadersText"
+                android:layout_marginTop="12dp"
+                android:text="Результаты по COVID-19"
+                />
+
+            <TextView
+                android:id="@+id/tv_res_cov"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginVertical="12dp"
+                android:background="@drawable/ic_field_border"
+                android:layout_marginHorizontal="48dp"
+                android:text="Я не болен"
+                style="@style/HeadersText"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/HeadersText"
+                android:layout_marginTop="12dp"
+                android:text="Возможность заболеваемости"
+                />
+
+            <TextView
+                android:id="@+id/tv_chance_cov"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginVertical="12dp"
+                android:layout_marginHorizontal="48dp"
+                android:background="@drawable/ic_field_border"
+                android:text="~10%"
+                style="@style/HeadersText"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/HeadersText"
+                android:layout_marginTop="12dp"
+                android:text="Симптомы"
+                />
+
+            <TextView
+                android:id="@+id/tv_simptoms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginVertical="12dp"
+                android:layout_marginHorizontal="48dp"
+                android:background="@drawable/ic_field_border"
+                android:text="Кашель"
+                style="@style/HeadersText"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/bt_save"
+                    android:layout_alignTop="@+id/bt_save"
+                    android:layout_alignEnd="@+id/bt_save"
+                    android:background="@drawable/ic_light_blue_but_back" />
+
+                <Button
+                    android:id="@+id/bt_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="48dp"
+                    android:layout_marginVertical="12dp"
+                    android:background="@drawable/ic_light_blue_but"
+                    style="@style/ButtonText"
+                    android:text="Сохранить изменения"
+                    />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/bt_friends_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="48dp"
+                android:fontFamily="@font/inter"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:text="Посмотреть как дела у друзей"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/bt_signout"
+                    android:layout_alignTop="@+id/bt_signout"
+                    android:layout_alignEnd="@+id/bt_signout"
+                    android:background="@drawable/ic_red_but_back" />
+
+                <Button
+                    android:id="@+id/bt_signout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="48dp"
+                    android:layout_marginVertical="12dp"
+                    android:background="@drawable/ic_red_but"
+                    style="@style/ButtonText"
+                    android:text="Выйти"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ru.quat63.coronainfo.BottomMenuView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RegActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:id="@+id/reg_activity_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_reg1_header"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="48dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/HeadersText"
+        android:text="ВВЕДИТЕ ВАШУ ФАМИЛИЮ"
+        />
+
+    <EditText
+        android:id="@+id/et_fam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginVertical="12dp"
+        tools:text="Пупкин"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/HeadersText"
+        android:layout_marginTop="12dp"
+        android:text="ВВЕДИТЕ ВАШЕ ИМЯ"
+        />
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginVertical="12dp"
+        tools:text="Василий"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/HeadersText"
+        android:text="ВВЕДИТЕ ВАШ ТЕЛЕФОН"
+        />
+
+    <br.com.sapereaude.maskedEditText.MaskedEditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginVertical="12dp"
+        android:inputType="phone"
+        android:typeface="monospace"
+        app:mask="+7(###)###-##-##"
+        app:allowed_chars="1234567890"
+        app:keep_hint="true"
+        tools:text="+79578526574"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/HeadersText"
+        android:layout_marginTop="12dp"
+        android:text="ВВЕДИТЕ ВАШ НАСЕЛЕННЫЙ ПУНКТ"
+
+        />
+    <EditText
+        android:id="@+id/et_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginVertical="12dp"
+        tools:text="Самара"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/bt_save"
+            android:layout_alignTop="@+id/bt_save"
+            android:layout_alignEnd="@+id/bt_save"
+            android:background="@drawable/ic_greenbut_back" />
+
+        <Button
+            android:id="@+id/bt_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginVertical="12dp"
+            android:background="@drawable/ic_green"
+            style="@style/ButtonText"
+            android:text="Продолжить"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/bt_signin"
+            android:layout_alignTop="@+id/bt_signin"
+            android:layout_alignEnd="@+id/bt_signin"
+            android:background="@drawable/ic_blue_but_back" />
+
+        <Button
+            android:id="@+id/bt_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginVertical="12dp"
+            android:background="@drawable/ic_blue_but"
+            style="@style/ButtonText"
+            android:text="Уже зарегистрированы"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/HeadersText"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="12dp"
+        android:text="ИЛИ"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/bt_vk"
+            android:layout_alignTop="@+id/bt_vk"
+            android:layout_alignEnd="@+id/bt_vk"
+            android:background="@drawable/ic_light_blue_but_back" />
+
+        <Button
+            android:id="@+id/bt_vk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginVertical="12dp"
+            android:background="@drawable/ic_light_blue_but"
+            style="@style/ButtonText"
+            android:text="Продолжить через ВК"
+            />
+    </RelativeLayout>
+</LinearLayout>
+</ScrollView>

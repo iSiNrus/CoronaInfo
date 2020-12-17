@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">CoronaInfo</string>
+
+    <string-array name="condition">
+        <item>Я не болею</item>
+        <item>Я болею</item>
+        <item>Был(а) в контакте с потенциальным больным</item>
+        <item>Был(а) в контакте с подствержденным случаем</item>
+        <item>Я уже переболел(а)</item>
+        <item>Есть симптомы, схожие с вирусом</item>
+    </string-array>
+
+    <string-array name="answers_1">
+        <item>Да, постоянно</item>
+        <item>Нет, никогда</item>
+        <item>Скорее да, чем нет</item>
+        <item>Скорее нет, чем да</item>
+    </string-array>
+
+    <string-array name="answers_3">
+        <item>Да</item>
+        <item>Нет</item>
+        <item>Скорее да, чем нет</item>
+        <item>Скорее нет, чем да</item>
+    </string-array>
+
+    <string name="title_activity_maps">Map</string>
+
+    <string name="instr">"
+        1. В ближайшее время прийти домой
+        2. Позвонить по телефону горячей линии “По коронавирусу”
+        3. Запастись продуктами питания на ближайшую неделю
+        4. ограничить контакт с людьми до минимума
+        5. Соблюдать режим самоизоляции
+        6.В ближайшее время стоит записаться к доктору на обследование
+        7. в случае ухудшения состояния здоровья, вызвать скорую помощь
+        "</string>
+
+</resources>

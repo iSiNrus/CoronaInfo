@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HealthActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/health_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingBottom="80dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/HeadersText"
+                android:text="ДНЕВНИК ЗДОРОВЬЯ"
+                android:gravity="center"
+                android:layout_marginVertical="24dp"
+                android:textSize="24sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/HeadersText"
+                android:layout_marginTop="12dp"
+                android:text="Мое состояние сейчас"
+                />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_field_border"
+                android:textAlignment="center"
+                android:layout_marginVertical="12dp"
+                android:layout_marginHorizontal="48dp"
+                style="@style/HeadersText"
+                android:entries="@array/condition"
+                >
+            </Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/HeadersText"
+                android:layout_marginTop="12dp"
+                android:text="Риск заболевания"
+                />
+
+            <TextView
+                android:id="@+id/tv_chance_cov"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginHorizontal="48dp"
+                android:layout_marginVertical="12dp"
+                android:background="@drawable/ic_field_border"
+                android:text="~10%"
+                style="@style/HeadersText"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/HeadersText"
+                android:layout_marginTop="12dp"
+                android:text="Симптомы"
+                />
+
+            <TextView
+                android:id="@+id/tv_simptoms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginHorizontal="48dp"
+                android:layout_marginVertical="12dp"
+                android:background="@drawable/ic_field_border"
+                android:text="Кашель"
+                style="@style/HeadersText"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/bt_start_test"
+                    android:layout_alignTop="@+id/bt_start_test"
+                    android:layout_alignEnd="@+id/bt_start_test"
+                    android:background="@drawable/ic_light_blue_but_back" />
+
+                <Button
+                    android:id="@+id/bt_start_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="48dp"
+                    android:layout_marginVertical="12dp"
+                    android:background="@drawable/ic_light_blue_but"
+                    style="@style/ButtonText"
+                    android:text="Пройти тест на риск заболевания"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ru.quat63.coronainfo.BottomMenuView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomeActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/info_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/home_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingBottom="80dp"
+            android:visibility="visible"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/bt_test_knowlege"
+                    android:layout_alignTop="@+id/bt_test_knowlege"
+                    android:layout_alignEnd="@+id/bt_test_knowlege"
+                    android:background="@drawable/ic_light_blue_but_back" />
+
+                <Button
+                    android:id="@+id/bt_test_knowlege"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="64dp"
+                    android:layout_marginVertical="12dp"
+                    android:padding="8dp"
+                    android:background="@drawable/ic_light_blue_but"
+                    style="@style/ButtonText"
+                    android:text="Пройти тест на знания о Covid-19"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/bt_instruction"
+                    android:layout_alignTop="@+id/bt_instruction"
+                    android:layout_alignEnd="@+id/bt_instruction"
+                    android:background="@drawable/ic_light_blue_but_back" />
+
+                <Button
+                    android:id="@+id/bt_instruction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="64dp"
+                    android:layout_marginVertical="12dp"
+                    android:padding="8dp"
+                    android:background="@drawable/ic_light_blue_but"
+                    style="@style/ButtonText"
+                    android:text="Действия при подозрении на заражение Covid-19"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/bt_call_emerg"
+                    android:layout_alignTop="@+id/bt_call_emerg"
+                    android:layout_alignEnd="@+id/bt_call_emerg"
+                    android:background="@drawable/ic_red_but_back" />
+
+                <Button
+                    android:id="@+id/bt_call_emerg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="64dp"
+                    android:layout_marginVertical="12dp"
+                    android:background="@drawable/ic_red_but"
+                    style="@style/ButtonText"
+                    android:padding="8dp"
+                    android:text="ВЫЗВАТЬ СКОРУЮ ПОМОЩЬ"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/bt_call_covid_line"
+                    android:layout_alignTop="@+id/bt_call_covid_line"
+                    android:layout_alignEnd="@+id/bt_call_covid_line"
+                    android:background="@drawable/ic_red_but_back" />
+
+                <Button
+                    android:id="@+id/bt_call_covid_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="64dp"
+                    android:layout_marginVertical="12dp"
+                    android:background="@drawable/ic_red_but"
+                    style="@style/ButtonText"
+                    android:padding="8dp"
+                    android:text="ПОЗВОНИТЬ НА ГОРЯЧУЮ ЛИНИЮ 'СТОП КОРОНАВИРУС'"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/instructions_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="32dp"
+                android:text="Действия при заболевании COVID-19"
+                android:gravity="center"
+                style="@style/HeadersText"
+                android:textSize="24sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="32dp"
+                android:text="@string/instr"
+                style="@style/HeadersText"
+                android:textSize="18sp"
+                />
+
+        <Button
+            android:id="@+id/bt_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/inter"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:text="Назад"
+            />
+    </LinearLayout>
+
+
+    <ru.quat63.coronainfo.BottomMenuView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

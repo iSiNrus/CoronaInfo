@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/scrollView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SigninActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:id="@+id/signin_activity_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="48dp"
+            android:fontFamily="@font/inter"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:text="ВХОД В СИСТЕМУ"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/HeadersText"
+            android:text="ВВЕДИТЕ ВАШУ ПОЧТУ"
+            />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginVertical="12dp"
+            android:inputType="textEmailAddress"
+            android:typeface="monospace"
+            tools:text="test@test.com"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/HeadersText"
+            android:text="ВВЕДИТЕ ПАРОЛЬ"
+            />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginVertical="12dp"
+            android:inputType="textPassword"
+            tools:text="123456"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/bt_save"
+                android:layout_alignTop="@+id/bt_save"
+                android:layout_alignEnd="@+id/bt_save"
+                android:background="@drawable/ic_greenbut_back" />
+
+            <Button
+                android:id="@+id/bt_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="48dp"
+                android:layout_marginVertical="12dp"
+                android:background="@drawable/ic_green"
+                style="@style/ButtonText"
+                android:text="Войти"
+                />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/inter"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:text="Вернуться"
+            />
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:paddingLeft="-80dp"
+            android:paddingBottom="-160dp"
+            android:rotation="26"
+            android:src="@drawable/ic_wear_a_mask" />
+    </LinearLayout>
+
+</ScrollView>
