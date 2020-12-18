@@ -10,6 +10,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -59,7 +60,15 @@ public class Reg2Activity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Нужно заполнить все поля", Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    register(fam, name, place, phone, email, pass);
+                    CheckBox cb = findViewById(R.id.cb_agree);
+                    if(cb.isChecked())
+                        register(fam, name, place, phone, email, pass);
+                    else
+                        Toast.makeText(
+                                Reg2Activity.this,
+                                "Для продолжения необходимо дать согласие на обработку данных",
+                                Toast.LENGTH_SHORT
+                        ).show();
                 }
             }
         });

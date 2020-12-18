@@ -58,6 +58,16 @@
             tools:text="123456"
             />
 
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/cb_agree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Принимаю соглашение на обработку персональных данных"
+            android:gravity="center"
+            style="@style/HeadersText"
+            android:layout_marginHorizontal="48dp"
+            />
+
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
